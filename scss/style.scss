@@ -1,0 +1,116 @@
+body{
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.wrapper {
+   border: 1px solid #000;
+   padding: 50px;
+}
+.title {
+   font-size: 50px;
+   text-align: center;
+   margin: 0 0 15px 0;
+}
+.describtion {
+   text-align: center;
+   font-size: 25px;
+   margin: 0 0 50px 0;
+}
+.log-area {
+   border: 1px solid #000;
+   height: 100px;
+   margin: 0 0 20px 0;
+   // .log-area__log
+
+   &__log{
+      font-size: 30px;
+   }
+
+}
+
+.label-area {
+   margin: 0 0 30px 0;
+}
+
+.label {
+
+}
+.input {
+   border: 1px solid #000;
+   padding: 10px;
+}
+.math-btn{
+   transition: .2s;
+   background-color: #f0f0f0;
+      & > p{
+         font-size: 30px;
+      }
+      &:hover{
+         background-color: #dbdbdb;
+      }
+		// .math-btn__plus
+
+		&__plus {
+		}
+
+		// .math-btn__minus
+
+		&__minus {
+		}
+
+		// .math-btn__multiply
+
+		&__multiply {
+		}
+
+		// .math-btn__divide
+
+		&__divide {
+		}
+
+		// .math-btn__more
+
+		&__more {
+		}
+
+		// .math-btn__less
+
+		&__less {
+		}
+
+		// .math-btn__equals
+
+		&__equals {
+		}
+
+		// .math-btn__more-equals
+
+		&__more-equals {
+		}
+
+		// .math-btn__less-equals
+
+		&__less-equals {
+		}
+}
+.math-buttons {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   grid-template-rows: repeat(2, 80px);
+   gap: 30px;
+   margin: 0 0 30px 0;
+
+}
+
+.submit-button {
+   font-size: 30px;
+   width: 100%;
+   height: 50px;
+   background-color: #f0f0f0;
+   &:hover{
+      background-color: #dbdbdb;
+   }
+}

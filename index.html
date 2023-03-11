@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="./css/nullstyle.css">
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   <div class="wrapper">
+      <h1 class="title">Calculator</h1>
+      <p class="describtion">By Bohdan Kovadlo</p>
+      <div class="log-area">
+         <p id="logText" class="log-area__log"></p>
+      </div>
+      <div class="label-area">
+         <label class="label">
+            First number
+            <input placeholder="number" id="firstNum" class="input" type="number">
+         </label>
+         <label class="label">
+            Second number
+            <input placeholder="number" id="secondNum" class="input" type="number">
+         </label>
+      </div>
+
+      <div class="math-buttons">
+         <button onclick="operation='+'" id="mathButton" class="math-btn math-btn__plus">
+            <p>+</p>
+         </button>
+         <button onclick="operation='-'" id="mathButton" class="math-btn math-btn__minus">
+            <p>-</p>
+         </button>
+         <button onclick="operation='*'" id="mathButton" class="math-btn math-btn__multiply">
+            <p>*</p>
+         </button>
+         <button onclick="operation='/'" id="mathButton" class="math-btn math-btn__divide">
+            <p>/</p>
+         </button>
+         <button onclick="operation='>'" id="mathButton" class="math-btn math-btn__more">
+            <p>></p>
+         </button>
+         <button onclick="operation='<'" id="mathButton" class="math-btn math-btn__less">
+            <p><</p>
+         </button>
+         <button onclick="operation='=='" id="mathButton" class="math-btn math-btn__equals">
+            <p>==</p>
+         </button>
+         <button onclick="operation='>='" id="mathButton" class="math-btn math-btn__more-equals">
+            <p>>=</p>
+         </button>
+         <button onclick="operation='<='" id="mathButton" class="math-btn math-btn__less-equals">
+            <p><=</p>
+         </button>
+         </div>
+         <button id="calcButton" class="submit-button">Calculate</button>
+      </div>
+   </div>
+   <script src="./js/script.js"></script>
+</body>
+</html>
