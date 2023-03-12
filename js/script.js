@@ -1,75 +1,46 @@
-const firstNum = document.getElementById('firstNum')
-const secondNum = document.getElementById('secondNum')
-const mathButton = document.getElementById('mathButton')
 const calcButton = document.getElementById('calcButton')
 const logText = document.getElementById('logText')
 let operation
 
-function plus(a,b) {
-   return a + b
-}
+function calc() {
+   let result
 
-function minus(a,b) {
-   return a - b
-}
+   let firstNum = Number(document.getElementById('firstNum').value)
+   let secondNum = Number(document.getElementById('secondNum').value)
 
-function multiply(a,b) {
-   return a * b
-}
-
-function divide(a,b) {
-   return a / b
-}
-
-function more(a,b) {
-   return a > b
-}
-
-function less(a,b) {
-   return a < b
-}
-
-function equals(a,b) {
-   return a == b
-}
-
-function moreEquals(a,b) {
-   return a >= b
-}
-
-function lessEquals(a,b) {
-   return a <= b
-}
-
-function switcher(firstNum, secondNum) {
-   if (operation == '+') {
-      return firstNum+secondNum
+   switch (operation) {
+      case '+':
+         result = firstNum + secondNum;
+         break;
+      case '-':
+         result = firstNum - secondNum;
+         break;
+      case '*':
+         result = firstNum * secondNum;
+         break;
+      case '/':
+         result = firstNum / secondNum;
+         break;
+      case '>':
+         result = firstNum > secondNum;
+         break;
+      case '<':
+         result = firstNum < secondNum;
+         break;
+      case '==':
+         result = firstNum == secondNum;
+         break;
+      case '>=':
+         result = firstNum >= secondNum;
+         break;
+      case '<=':
+         result = firstNum <= secondNum;
+         break;
    }
-   if (operation == '-') {
-      return firstNum-secondNum
-   }
-   if (operation == '*') {
-      return firstNum*secondNum
-   }
-   if (operation == '/') {
-      return firstNum/secondNum
-   }
-   if (operation == '>') {
-      return firstNum>secondNum
-   }
-   if (operation == '<') {
-      return firstNum<secondNum
-   }
-   if (operation == '==') {
-      return firstNum==secondNum
-   }
-   if (operation == '>=') {
-      return firstNum>=secondNum
-   }
-   if (operation == '<=') {
-      return firstNum<=secondNum
-   }
+   console.log(result)
+   logText.innerHTML = result;
 }
 
-let result = calcButton.addEventListener('click', switcher(firstNum, secondNum))
 
+
+calcButton.addEventListener("click", () => calc())

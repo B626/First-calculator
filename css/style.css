@@ -32,10 +32,19 @@ body {
   border: 1px solid #000;
   height: 100px;
   margin: 0 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .log-area__log {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .label-area {
